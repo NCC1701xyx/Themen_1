@@ -12,9 +12,30 @@ Block-Kommentar
 
 /* Deklaration + Wertzuweisung I */
 
-let firstName; // Deklaration (Definition)
-console.log(firstName); // Ausgabe
-firstName ="Max"; //assignment | Wertzuweisung
-console.log(firstName); // Ausgabe
-let secondName = "Mütze"; // Deklaration + Wertzuweisung
-console.log("Hi, ich bin " + firstName + " " + secondName + "!");
+// let firstName; // Deklaration (Definition)
+// console.log(firstName); // Ausgabe
+// firstName ="Max"; //assignment | Wertzuweisung
+// console.log(firstName); // Ausgabe
+// let secondName = "Mütze"; // Deklaration + Wertzuweisung
+// console.log("Hi, ich bin " + firstName + " " + secondName + "!");
+
+/*  
+    Wertzuweisung II + Datentypen
+    JS ist ein untypisierte Sprache!
+*/
+
+let test; // Deklaration
+console.log ("Datentyp: " + typeof test);
+console.log ("Inhalt: " + test);
+console.log ("--------------------------");
+test = "hello"; // string
+console.log ("Datentyp: " + typeof test);
+console.log ("Inhalt: " + test);
+console.log ("--------------------------");
+test = 2; // number
+console.log ("Datentyp: " + typeof test);
+console.log ("Inhalt: " + test);
+console.log ("--------------------------");
+test = true; // boolean
+console.log ("Datentyp: " + typeof test);
+console.log ("Inhalt: " + test);
