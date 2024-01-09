@@ -24,18 +24,29 @@ Block-Kommentar
     JS ist ein untypisierte Sprache!
 */
 
-let test; // Deklaration
-console.log ("Datentyp: " + typeof test);
-console.log ("Inhalt: " + test);
-console.log ("--------------------------");
-test = "hello"; // string
-console.log ("Datentyp: " + typeof test);
-console.log ("Inhalt: " + test);
-console.log ("--------------------------");
-test = 2; // number
-console.log ("Datentyp: " + typeof test);
-console.log ("Inhalt: " + test);
-console.log ("--------------------------");
-test = true; // boolean
-console.log ("Datentyp: " + typeof test);
-console.log ("Inhalt: " + test);
+// let test; // Deklaration
+// console.log ("Datentyp: " + typeof test);
+// console.log ("Inhalt: " + test);
+// console.log ("--------------------------");
+// test = "hello"; // string
+// console.log ("Datentyp: " + typeof test);
+// console.log ("Inhalt: " + test);
+// console.log ("--------------------------");
+// test = 2; // number
+// console.log ("Datentyp: " + typeof test);
+// console.log ("Inhalt: " + test);
+// console.log ("--------------------------");
+// test = true; // boolean
+// console.log ("Datentyp: " + typeof test);
+// console.log ("Inhalt: " + test);
+
+/* Variablen vs. Konstanten in JS */
+
+let test; //Deklaration
+test = "hi" ; // Wertzuweisung (initialisierung)
+test = "hello" ;
+console.log ("Inhalt: " + test); // Ausgabe
+
+const test2 = "hi"; //Deklaration + Wertzuweisung
+
+console.log ("Inhalt: " + test2); // Ausgabe
