@@ -19,9 +19,9 @@
 const prompt = require('prompt-sync')({sigint: true});
 // Geburtsdatum abfragen und Alter anzeigen
 function alterBerechnen(geburtsdatum) {
-    var geburtsdatumObjekt = new Date(geburtsdatum);
-    var aktuellesDatum = new Date();
-    var differenzJahre = aktuellesDatum.getFullYear() - geburtsdatumObjekt.getFullYear();
+    let geburtsdatumObjekt = new Date(geburtsdatum);
+    let aktuellesDatum = new Date();
+    let differenzJahre = aktuellesDatum.getFullYear() - geburtsdatumObjekt.getFullYear();
 
     if (aktuellesDatum.getMonth() < geburtsdatumObjekt.getMonth() ||
         (aktuellesDatum.getMonth() === geburtsdatumObjekt.getMonth() &&
@@ -33,6 +33,6 @@ function alterBerechnen(geburtsdatum) {
 }
 
 // Beispielaufruf
-var geburtsdatum = prompt("Geben Sie Ihr Geburtsdatum im Format YYYY-MM-DD ein:");
-var alter = alterBerechnen(geburtsdatum);
+let geburtsdatum = prompt("Geben Sie Ihr Geburtsdatum im Format YYYY-MM-DD ein:");
+let alter = alterBerechnen(geburtsdatum);
 console.log("Ihr Alter beträgt " + alter + " Jahre.");
