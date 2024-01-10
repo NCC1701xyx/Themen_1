@@ -41,12 +41,14 @@ Block-Kommentar
 // console.log ("Inhalt: " + test);
 
 /* Variablen vs. Konstanten in JS */
+// "use strict"
+// let test; //Deklaration
+// test = "hi" ; // Wertzuweisung (initialisierung)
+// test = "hello" ;
+// console.log ("Inhalt: " + test); // Ausgabe
+
+// const test2 = "hi"; //Deklaration + Wertzuweisung
+
+// console.log ("Inhalt: " + test2); // Ausgabe
+
 "use strict"
-let test; //Deklaration
-test = "hi" ; // Wertzuweisung (initialisierung)
-test = "hello" ;
-console.log ("Inhalt: " + test); // Ausgabe
-
-const test2 = "hi"; //Deklaration + Wertzuweisung
-
-console.log ("Inhalt: " + test2); // Ausgabe
