@@ -71,32 +71,50 @@ isJohnEqual = (ageJohn == ageMark);
 
 /****** Fallunterscheidung / SWITCH|CASE 1 ******/
 
-const firstname = "Jane";
-let iob;
-job = "driver"; // .. fährt TAXI! / UBER
-job = "diver";      // .. taucht im Rhein! 
-job = "artist";     // .. malt ein Bild!
-job = "teacher";    // .. unterrichtet!
-job = "instructor";  // .. unterrichtet!
-switch (job) 
-{
-    case "driver":
-        console.log(firstname + " fährt Taxi!");
-        break;
-    case "diver":
-        console.log(firstname + " taucht im Rhein!");
-        break; 
-    case "artist":
-        console.log(firstname + " malt ein Bild!");
-        break;
+// const firstname = "Jane";
+// let iob;
+// job = "driver"; // .. fährt TAXI! / UBER
+// job = "diver";      // .. taucht im Rhein! 
+// job = "artist";     // .. malt ein Bild!
+// job = "teacher";    // .. unterrichtet!
+// job = "instructor";  // .. unterrichtet!
+// switch (job) 
+// {
+//     case "driver":
+//         console.log(firstname + " fährt Taxi!");
+//         break;
+//     case "diver":
+//         console.log(firstname + " taucht im Rhein!");
+//         break; 
+//     case "artist":
+//         console.log(firstname + " malt ein Bild!");
+//         break;
     
-    case "teacher":
-    case "instructor":
-        console.log(firstname + " unterrichtet!");
+//     case "teacher":
+//     case "instructor":
+//         console.log(firstname + " unterrichtet!");
 
+//         break;
+
+//     default:
+//         console.log("Jane macht etwas anderes!")
+//         break;
+// }
+
+/********  Fallunterscheidung / SWITCH|CASE 2 *******/
+
+const cond = true;
+const value = 1;
+
+switch (cond) {
+    case (value == 1):
+        console.log ("Value hat den Wert 1.")        
         break;
+        case (value == 2):
+            console.log ("Value hat den Wert 2.") 
+            break;  
 
     default:
-        console.log("Jane macht etwas anderes!")
+        console.log("Value hat einen anderen Wert")
         break;
 }
