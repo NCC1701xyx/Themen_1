@@ -82,22 +82,19 @@ switch (job)
 {
     case "driver":
         console.log(firstname + " fährt Taxi!");
+        break;
     case "diver":
-        console.log(firstname + " taucht im Rhein!"); 
+        console.log(firstname + " taucht im Rhein!");
+        break; 
     case "artist":
         console.log(firstname + " malt ein Bild!");
+        break;
     
     case "teacher":
     case "instructor":
         console.log(firstname + " unterrichtet!");
 
-
-
-
         break;
-
-
-
 
     default:
         console.log("Jane macht etwas anderes!")
