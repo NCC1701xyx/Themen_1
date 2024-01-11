@@ -12,11 +12,11 @@ isJohnOlder = (ageJohn > ageMark);
 isJohnEqual = (ageJohn == ageMark);
 
 // Ausgabe
-console.log("ageJohn: " + ageJohn);
-console.log("ageMark: " + ageMark);
-console.log("isJohnOlder: " + isJohnOlder);
-console.log("isJohnEqual: " + isJohnEqual);
-console.log("------------------");
+// console.log("ageJohn: " + ageJohn);
+// console.log("ageMark: " + ageMark);
+// console.log("isJohnOlder: " + isJohnOlder);
+// console.log("isJohnEqual: " + isJohnEqual);
+// console.log("------------------");
 
 /************ IF  ************/
 // TINA --> There is no alternative!
@@ -68,3 +68,38 @@ console.log("------------------");
 //     console.log ("John ist jünger !");
 // }
 
+
+/****** Fallunterscheidung / SWITCH|CASE 1 ******/
+
+const firstname = "Jane";
+let iob;
+job = "driver"; // .. fährt TAXI! / UBER
+job = "diver";      // .. taucht im Rhein! 
+job = "artist";     // .. malt ein Bild!
+job = "teacher";    // .. unterrichtet!
+job = "instructor";  // .. unterrichtet!
+switch (job) 
+{
+    case "driver":
+        console.log(firstname + " fährt Taxi!");
+    case "diver":
+        console.log(firstname + " taucht im Rhein!"); 
+    case "artist":
+        console.log(firstname + " malt ein Bild!");
+    
+    case "teacher":
+    case "instructor":
+        console.log(firstname + " unterrichtet!");
+
+
+
+
+        break;
+
+
+
+
+    default:
+        console.log("Jane macht etwas anderes!")
+        break;
+}
