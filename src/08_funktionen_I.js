@@ -45,7 +45,7 @@ function ausgabeNamen() {
 
 /***** Funktionen 02a *****/
 // 2a. Parametrisierung + Datenübergabe von INNEN
-const prompt = require('prompt-sync')({sigint: true});
+
 // Funktionsaufruf
 // ausgabeNamen2("maria");// Argumente sind Daten für Parameter
 
@@ -55,9 +55,39 @@ const prompt = require('prompt-sync')({sigint: true});
 
 
 // Funktion
-function ausgabeNamen2(firstName) 
-{
+const prompt = require('prompt-sync')({sigint: true});
+
+// function ausgabeNamen2(firstName) 
+// {
    
-    console.log("Hallo, " + firstName + "!");
+//     console.log("Hallo, " + firstName + "!");
    
+// }
+
+// ausgabeNamenParams( prompt (" Vorname: "), prompt ("Nachname: "))
+
+
+
+// function ausgabeNamenParams(firstName, familyName) 
+
+// {
+//     console.log("Hallo, " + firstName + " " + familyName + "!")
+
+// }
+
+// Benutzerdefinierte Funktion für die Eingabe von Daten
+function getUserInput(promptMessage) {
+    return prompt(promptMessage);
+}
+
+// Eingabe von Vorname und Nachname
+const firstName = getUserInput("Geben Sie den Vornamen ein:");
+const familyName = getUserInput("Geben Sie den Nachnamen ein:");
+
+// Funktionsaufruf
+ausgabeNamenParams(firstName, familyName);
+
+// Funktion
+function ausgabeNamenParams(firstName, familyName) {
+    console.log("Hallo, " + firstName + " " + familyName + "!");
 }
