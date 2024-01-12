@@ -75,23 +75,31 @@ const prompt = require('prompt-sync')({sigint: true});
 
 // }
 
+/*v1*/
+
 // // Benutzerdefinierte Funktion für die Eingabe von Daten
+
 // function getUserInput(promptMessage) {
 //     return prompt(promptMessage);
 // }
 
 // // Eingabe von Vorname und Nachname
+
 // const firstName = getUserInput("Geben Sie den Vornamen ein:");
 // const familyName = getUserInput("Geben Sie den Nachnamen ein:");
 
 // // Funktionsaufruf
+
 // ausgabeNamenParams(firstName, familyName);
 
 // // Funktion
+
 // function ausgabeNamenParams(firstName, familyName) {
 //     console.log("Hallo, " + firstName + " " + familyName + "!");
 // }
-// V2
+
+/* V2*/
+
 function getUserInput(promptMessage) {
     return prompt(promptMessage);
 }
