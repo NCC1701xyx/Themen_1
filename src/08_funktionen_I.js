@@ -75,19 +75,52 @@ const prompt = require('prompt-sync')({sigint: true});
 
 // }
 
-// Benutzerdefinierte Funktion für die Eingabe von Daten
+// // Benutzerdefinierte Funktion für die Eingabe von Daten
+// function getUserInput(promptMessage) {
+//     return prompt(promptMessage);
+// }
+
+// // Eingabe von Vorname und Nachname
+// const firstName = getUserInput("Geben Sie den Vornamen ein:");
+// const familyName = getUserInput("Geben Sie den Nachnamen ein:");
+
+// // Funktionsaufruf
+// ausgabeNamenParams(firstName, familyName);
+
+// // Funktion
+// function ausgabeNamenParams(firstName, familyName) {
+//     console.log("Hallo, " + firstName + " " + familyName + "!");
+// }
+// V2
 function getUserInput(promptMessage) {
     return prompt(promptMessage);
 }
 
-// Eingabe von Vorname und Nachname
-const firstName = getUserInput("Geben Sie den Vornamen ein:");
-const familyName = getUserInput("Geben Sie den Nachnamen ein:");
+function promptUserForNames() {
+    const firstName = getUserInput("Geben Sie den Vornamen ein:");
+    const familyName = getUserInput("Geben Sie den Nachnamen ein:");
+    return { firstName, familyName };
+}
 
-// Funktionsaufruf
-ausgabeNamenParams(firstName, familyName);
-
-// Funktion
-function ausgabeNamenParams(firstName, familyName) {
+function printGreeting(firstName, familyName) {
     console.log("Hallo, " + firstName + " " + familyName + "!");
 }
+
+// Benutzer nach Vorname und Nachname fragen
+const { firstName, familyName } = promptUserForNames();
+
+// Grüße ausgeben
+printGreeting(firstName, familyName);
+
+
+
+
+
+
+/***** Funktionen 03a *****/
+
+// 03a. Vorbereitung -Trennen der Funktionalitäten
+
+// Postulat: one function = one job (uncle Bob)
+
+// SRP single responsibility principle
