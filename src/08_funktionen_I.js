@@ -77,26 +77,26 @@ const prompt = require('prompt-sync')({sigint: true});
 
 /*v1*/
 
-// // Benutzerdefinierte Funktion für die Eingabe von Daten
+// Benutzerdefinierte Funktion für die Eingabe von Daten
 
-// function getUserInput(promptMessage) {
-//     return prompt(promptMessage);
-// }
+function getUserInput(promptMessage) {
+    return prompt(promptMessage);
+}
 
-// // Eingabe von Vorname und Nachname
+// Eingabe von Vorname und Nachname
 
-// const firstName = getUserInput("Geben Sie den Vornamen ein:");
-// const familyName = getUserInput("Geben Sie den Nachnamen ein:");
+const firstName = getUserInput("Geben Sie den Vornamen ein:");
+const familyName = getUserInput("Geben Sie den Nachnamen ein:");
 
-// // Funktionsaufruf
+// Funktionsaufruf
 
-// ausgabeNamenParams(firstName, familyName);
+ausgabeNamenParams(firstName, familyName);
 
-// // Funktion
+// Funktion
 
-// function ausgabeNamenParams(firstName, familyName) {
-//     console.log("Hallo, " + firstName + " " + familyName + "!");
-// }
+function ausgabeNamenParams(firstName, familyName) {
+    console.log("Hallo, " + firstName + " " + familyName + "!");
+}
 
 /* V2*/
 
