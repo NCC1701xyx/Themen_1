@@ -25,6 +25,11 @@ function addition(a, b) {
   }
   
   // Division
+  output(division(4,2));
+output(division(3,2));
+output(division(3,-2));
+output(division(0,2));
+output(division(3,0))
   function division(a, b) {
 	if (b !== 0) {
 	  return a / b;
@@ -33,7 +38,10 @@ function addition(a, b) {
 	}
   }
   
- 
+ //v2
+//  function division(a, b) {
+// 	return b !== 0 ? a / b : "Division durch Null ist nicht definiert";
+//   }
 
 
 
