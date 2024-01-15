@@ -42,7 +42,23 @@ output(division(3,0))
 //  function division(a, b) {
 // 	return b !== 0 ? a / b : "Division durch Null ist nicht definiert";
 //   }
-
+function rechner(a, b, operation) {
+	switch (operation) {
+	  case 'addition':
+		return addition(a, b);
+	  case 'subtraktion':
+		return subtraktion(a, b);
+	  case 'multiplikation':
+		return multiplikation(a, b);
+	  case 'division':
+		return division(a, b);
+	  default:
+		return 'Ungültige Operation';
+	}
+  }
+  
+ 
+  
 
 
 
