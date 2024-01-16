@@ -56,7 +56,7 @@ function dateneingabe() {
 
     if (isNaN(a) || isNaN(b) || !(operation in operationen)) {
         console.log('Ungültige Eingabe. Bitte stellen Sie sicher, dass Sie gültige Zahlen eingeben und eine der unterstützten Operationen auswählen.');
-        return null;
+        return ;
     }
 
     return { a, b, operation };
