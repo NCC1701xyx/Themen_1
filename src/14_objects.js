@@ -36,19 +36,22 @@ let person = {
                 salary: [120000, 160000],
                 permission: true,
                 sayHello: function(){
-                    return "Hello";
+                    return "Hallo,ich bin " + this.firstName;
                 }
             };
 
 
 // output(person);
-output(person.familyName)
-output(person.firstName)
-output(person.salary[1])
-output(person.permission)
-output(person.sayHello())
+// output(person.familyName)
+// output(person.firstName)
+// output(person.salary[1])
+// output(person.permission)
+// output(person.sayHello())
 
-const txt = person.sayHello() + ", ich bin " + person.firstName +
+// const txt = person.sayHello() + ", ich bin " + person.firstName +
+            // " und verdiene " + person.salary[1] + " p.a."
+
+ const txt = person.sayHello() +
             " und verdiene " + person.salary[1] + " p.a."
 
 output(txt);
